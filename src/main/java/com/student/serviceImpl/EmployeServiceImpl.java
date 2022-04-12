@@ -159,9 +159,12 @@ public class EmployeServiceImpl implements EmployeService {
 	@Override
 	public List<com.student.bean.Employe> findByAge1() {
 
-		List<Employe> employelist = employeRepository.findByAge1();
-
+		List<Employe> employelist = null;
+		
+ employelist=employeRepository.findByAge1();
+		
 		return employelist;
+		
 	}
 
 }
